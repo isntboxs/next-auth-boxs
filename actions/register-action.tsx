@@ -1,8 +1,9 @@
 "use server"
 
+import { NextResponse } from "next/server"
 import { getUserByEmail } from "@/data/user"
 import { RegisterSchema, RegisterSchemaType } from "@/schemas"
-import bcrypt from "bcrypt"
+import bcrypt from "bcryptjs"
 
 import { db } from "@/lib/db"
 
